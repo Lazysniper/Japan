@@ -92,4 +92,4 @@ app.post("/submit", async (req, res) => {
   // res.send("Successfully submitted! Thank you!");
 });
 
-app.listen(1337, (req, res) => console.log("running on 1337"));
+app.listen(1337 || process.env.PORT, (req, res) => console.log("running on 1337"));
